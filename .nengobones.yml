@@ -1,0 +1,56 @@
+project_name: LMU
+pkg_name: lmu
+repo_name: nengo/lmu
+description: LMU metapackage for installing various LMU implementations
+
+copyright_start: 2020
+
+license_rst: {}
+
+manifest_in: {}
+
+setup_py:
+  python_requires: ">=3.6"
+  url: https://github.com/nengo/lmu
+  install_req:
+    # minimum version specified because we import it in __init__
+    - keras-lmu>=0.3.0
+  tests_req:
+    - pytest>=6.1.0
+  classifiers:
+    - "Development Status :: 3 - Alpha"
+    - "Intended Audience :: Science/Research"
+    - "License :: Free for non-commercial use"
+    - "Operating System :: OS Independent"
+    - "Programming Language :: Python "
+    - "Programming Language :: Python :: 3.6"
+    - "Programming Language :: Python :: 3.7"
+    - "Programming Language :: Python :: 3.8"
+    - "Topic :: Scientific/Engineering "
+    - "Topic :: Scientific/Engineering :: Artificial Intelligence"
+
+travis_yml:
+  python: 3.8
+  jobs:
+    - script: test
+  pypi_user: __token__
+  slack_notifications: "A2NBzM/LLeoEiN1OHQdbjm5BKnBGHPx5lQkzW1zBg/i14Khjc7Y44U/0HOWJ\
+    fiVw/04vlwnwc7/vsFjpOv68g0bE/BcYBchtQTV5RN+6gkgpRHc9/zFfITYwKC414VEzDCQhxq7AD2ls\
+    cLaMGMO5UJ5DjWC4AP0URXYGIXoHVk8OnGdeJEVwBG/PCuGzTPQSqtCEO3hNUzQQ1T1QMtdxPKem9D3x\
+    5AkC0kYa8gxwtiHGf9mif7hdgg52v9SLmq8o9FBANgtEPBFNeMIriAEeBQaeK/zBMkX7SJgIHRiKgQmQ\
+    eL6cLxcm2eTIow3oBeMActU3jzxqfKqSjv3SHnHsQDaOeKvuqdC8/i4WNYJGbO0frxNJAOwE3QoYv/4P\
+    MkzGzQ6ymnNIEgGy2r1UHPqK2OzIp8sqr6P37Km0HvlGSHerAs/m4qe0mu+kVT1Amq4xg49DmephnPoc\
+    VhMHtWq0/iI9wiUYFc5bdISJdB8u8Uxk7xcJ5d6dAcW/ehSjPx53qE0P+brzuxHfe77t6GpP5r+8mvO/\
+    VkMc4Ewp9gv7LX4fHgSbEtQIxtlPiQjASPIl5PknC6GFmgcafuM85DEpQDVpqmueZK/HR4VvGF8BrzQi\
+    JzKf8mSOc9V3eYDaL5M0sK9wOK6SHXE7IkUcZGCopVJfd5chZUsWDKko5ZTZReg="
+  deploy_dists:
+    - sdist
+    - bdist_wheel
+
+ci_scripts:
+  - template: test
+  - template: deploy
+
+pre_commit_config_yaml: {}
+
+pyproject_toml: {}
