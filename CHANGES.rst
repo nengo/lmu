@@ -19,8 +19,8 @@ Release history
    - Removed
    - Fixed
 
-0.3.0 (unreleased)
-==================
+0.3.0 (NOvember 6, 2020)
+========================
 
 The version of this package as it existed prior to 0.3.0 has been renamed
 to ``keras-lmu``. This package will continue as a metapackage for installing
