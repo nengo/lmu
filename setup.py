@@ -30,7 +30,7 @@ root = pathlib.Path(__file__).parent
 version = runpy.run_path(str(root / "lmu" / "version.py"))["version"]
 
 install_req = [
-    "keras-lmu>=0.3.0",
+    "keras-lmu>=0.4.0",
 ]
 docs_req = []
 optional_req = []

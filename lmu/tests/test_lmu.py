@@ -1,6 +1,7 @@
 from importlib import reload
 
 import keras_lmu
+
 import lmu
 
 
@@ -13,4 +14,4 @@ def test_import_fallback(capsys):
 
     assert lmu.LMU is keras_lmu.LMU
     assert lmu.LMUCell is keras_lmu.LMUCell
-    assert lmu.LMUFFT is keras_lmu.LMUFFT
+    assert lmu.LMUFeedforward is keras_lmu.LMUFeedforward

@@ -14,7 +14,7 @@ setup_py:
   url: https://github.com/nengo/lmu
   install_req:
     # minimum version specified because we import it in __init__
-    - keras-lmu>=0.3.0
+    - keras-lmu>=0.4.0
   tests_req:
     - pytest>=6.1.0
   classifiers:
@@ -54,3 +54,9 @@ ci_scripts:
 pre_commit_config_yaml: {}
 
 pyproject_toml: {}
+
+version_py:
+  major: 0
+  minor: 4
+  patch: 0
+  release: false

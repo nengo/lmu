@@ -2,8 +2,6 @@
 
 import sys
 
-from keras_lmu.layers import LMU, LMUCell, LMUFFT
-
 print(
     "'lmu' is a metapackage that should not be imported directly. You might be "
     "intending to `import keras_lmu` (which used to be generically referred to as "
@@ -11,3 +9,5 @@ print(
     "not work in the future so you should update your imports.",
     file=sys.stderr,
 )
+
+from keras_lmu.layers import LMU, LMUCell, LMUFeedforward
