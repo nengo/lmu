@@ -19,9 +19,14 @@ Release history
    - Removed
    - Fixed
 
-0.3.1 (unreleased)
-==================
+0.4.0 (November 10, 2021)
+=========================
 
+**Changed**
+
+- Updated to use KerasLMU 0.4. (`#2`_)
+
+.. _#2: https://github.com/nengo/lmu/pull/2
 
 0.3.0 (November 6, 2020)
 ========================
