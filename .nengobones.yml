@@ -4,6 +4,7 @@ repo_name: nengo/lmu
 description: LMU metapackage for installing various LMU implementations
 
 copyright_start: 2020
+license: abr-free
 
 license_rst: {}
 
@@ -20,7 +21,6 @@ setup_py:
   classifiers:
     - "Development Status :: 3 - Alpha"
     - "Intended Audience :: Science/Research"
-    - "License :: Free for non-commercial use"
     - "Operating System :: OS Independent"
     - "Programming Language :: Python "
     - "Programming Language :: Python :: 3.6"
