@@ -4,7 +4,7 @@
 LMU license
 ***********
 
-Copyright (c) 2020-2022 Applied Brain Research
+Copyright (c) 2020-2023 Applied Brain Research
 
 **ABR License**
 
