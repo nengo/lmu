@@ -4,11 +4,12 @@
 requires = ["setuptools<64", "wheel"]
 
 [tool.black]
-target-version = ['py36']
+target-version = ['py38']
 
 [tool.isort]
 profile = "black"
 src_paths = ["lmu"]
+skip_gitignore = true
 
 [tool.docformatter]
 wrap-summaries = 88
